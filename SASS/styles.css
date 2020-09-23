@@ -1,0 +1,260 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/*HEADER*/
+header {
+  height: 100px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*STEPS*/
+#steps {
+  width: 100%;
+  background-color: #eeecec;
+}
+
+#steps p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#steps .localisation {
+  margin-top: -20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: -20px;
+  background-color: #e0dfdf;
+  -webkit-box-shadow: 0px 2px 2px #a09f9f inset;
+          box-shadow: 0px 2px 2px #a09f9f inset;
+}
+
+#steps .map {
+  padding-right: 13px;
+}
+
+#steps .reserve {
+  margin-bottom: -2px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#steps .suite {
+  margin-top: -15px;
+}
+
+#steps .button-1 {
+  display: block;
+  width: 180px;
+  height: 50px;
+  background: #af30af;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+#steps .button-1:hover {
+  background: #02b8dd;
+}
+
+/*POSSIBILITIES*/
+#possibilities {
+  width: 100%;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#possibilities h2 {
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#possibilities ul {
+  list-style-type: none;
+}
+
+#possibilities ul li {
+  position: relative;
+  margin: 10px;
+  left: -35px;
+}
+
+#possibilities ul li .icone-btn {
+  position: absolute;
+  top: 23px;
+  left: 30px;
+  font-size: 14px;
+}
+
+#possibilities ul li .notif-left {
+  border-radius: 50%;
+  width: 13px;
+  height: 14px;
+  padding-left: 6px;
+  padding-bottom: 1px;
+  padding-top: 2px;
+  color: white;
+  background-color: #b12bb1;
+  font-size: 11px;
+  position: absolute;
+  top: 22px;
+  left: -10px;
+}
+
+#possibilities ul li .button-2 {
+  background-color: #eeecec;
+  border: none;
+  -webkit-box-shadow: 5px 5px 8px grey;
+          box-shadow: 5px 5px 8px grey;
+  border-radius: 15px;
+  display: block;
+  width: 290px;
+  height: 60px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#possibilities ul li .button-2:hover {
+  background: #fadafd;
+}
+
+/*RESTAURANTS*/
+article {
+  width: 100%;
+  background-color: #eeecec;
+  padding-bottom: 40px;
+}
+
+article h2 {
+  margin-left: 15px;
+  margin-top: 50px;
+  margin-bottom: 1px;
+  padding-top: 40px;
+}
+
+article .restaurant {
+  height: 135px;
+  width: 290px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+article a {
+  text-decoration: none;
+  color: black;
+}
+
+article .name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+article i {
+  float: right;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+article .lieu {
+  margin-top: -10px;
+  margin-left: 10px;
+  padding-bottom: 19px;
+}
+
+article #bloc-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article #bloc-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -15px;
+}
+
+article .zoom-menus {
+  border: 0px black solid;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #080808d7;
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: -19px;
+}
+
+footer h3 {
+  padding-top: 25px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer .footer {
+  font-size: 10px;
+  padding-right: 8px;
+}
+
+/*MENUS DISPOSITION
+.cartes
+{
+    display: grid;
+    grid-template-areas: "a b";
+    justify-content: center;
+    grid-gap: 50px;
+    margin: 50px; 
+}*/
+/*# sourceMappingURL=styles.css.map */
