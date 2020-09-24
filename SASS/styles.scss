@@ -91,14 +91,15 @@ header
 #possibilities
 {
     width: 100%;
-    display: block;
+    display: flex;
     flex-direction: column;
-
+    
     h2
     {
         margin-left: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: -10px;
+
     }
 
     ul
@@ -261,12 +262,47 @@ footer
     }
 }
 
-/*MENUS DISPOSITION
-.cartes
+/*RESPONSIVE*/
+
+@media all and (min-width: 360px) 
 {
-    display: grid;
-    grid-template-areas: "a b";
-    justify-content: center;
-    grid-gap: 50px;
-    margin: 50px; 
-}*/
+    #possibilities
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2
+    {
+        margin-right: 200px;
+    }
+}
+
+/*MENUS DISPOSITION*/
+
+@media all and (min-width: 768px) 
+{   
+    .cartes
+    {
+        display: grid;
+        grid-template-areas: "a b";
+        justify-content: center;
+        grid-gap: 50px;
+        margin: 50px;
+        
+    }
+
+
+}
+
+@media all and (min-width: 411px) 
+{ 
+    .restaurant
+    {
+        height: 135px;
+        width: 400px;
+    }
+}
