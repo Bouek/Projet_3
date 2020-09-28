@@ -140,7 +140,7 @@ header
             {
                 background-color: rgb(238, 236, 236);
                 border: none;
-                box-shadow: 5px 5px 8px grey;
+                box-shadow: 2px 2px 8px grey;
                 border-radius: 15px;
                 display: block;
                 width: 290px;
@@ -202,6 +202,7 @@ article
         float: right;
         font-size: 20px;
         margin-right: 20px;
+        color: rgba(128, 128, 128, 0.911);
     }
 
     .lieu

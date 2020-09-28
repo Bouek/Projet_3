@@ -137,8 +137,8 @@ header {
 #possibilities ul li .button-2 {
   background-color: #eeecec;
   border: none;
-  -webkit-box-shadow: 5px 5px 8px grey;
-          box-shadow: 5px 5px 8px grey;
+  -webkit-box-shadow: 2px 2px 8px grey;
+          box-shadow: 2px 2px 8px grey;
   border-radius: 15px;
   display: block;
   width: 290px;
@@ -188,6 +188,7 @@ article i {
   float: right;
   font-size: 20px;
   margin-right: 20px;
+  color: rgba(128, 128, 128, 0.911);
 }
 
 article .lieu {
