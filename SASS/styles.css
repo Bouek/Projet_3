@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'roboto';
-  src: url("fonts/Amble-Regular-webfont.eot");
-  src: url("fonts/Amble-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Amble-Regular-webfont.woff2") format("woff2"), url("fonts/Amble-Regular-webfont.woff") format("woff"), url("fonts/Amble-Regular-webfont.ttf") format("truetype"), url("fonts/Amble-Regular-webfont.svg#ambleregular") format("svg");
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'shrikhand';
-  src: url("fonts/Amble-Regular-webfont.eot");
-  src: url("fonts/Amble-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Amble-Regular-webfont.woff2") format("woff2"), url("fonts/Amble-Regular-webfont.woff") format("woff"), url("fonts/Amble-Regular-webfont.ttf") format("truetype"), url("fonts/Amble-Regular-webfont.svg#ambleregular") format("svg");
+  src: url("../fonts/shrikhand-regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   height: 100%;
+  font-family: 'shrikhand';
 }
 
 body {
@@ -144,7 +143,7 @@ header {
   padding-bottom: 1px;
   padding-top: 2px;
   color: white;
-  background-color: #b12bb1;
+  background-color: #9356DC;
   font-size: 11px;
   position: absolute;
   top: 22px;
@@ -195,10 +194,11 @@ article a {
 }
 
 article .name {
-  text-transform: uppercase;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 20px;
   margin-left: 10px;
+  padding-top: -30px;
+  padding-bottom: -20px;
 }
 
 article i {
@@ -250,6 +250,17 @@ article .zoom-menus {
   background-color: white;
 }
 
+article .zoom-menus:hover {
+  overflow: hidden;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  opacity: 0.8;
+}
+
 /*FOOTER*/
 footer {
   background-color: #080808d7;
@@ -293,10 +304,48 @@ footer .footer {
   h2 {
     margin-right: 200px;
   }
+  article h2 {
+    margin-left: 23px;
+  }
+  article .restaurant {
+    height: 140px;
+    width: 310px;
+  }
 }
 
 /*MENUS DISPOSITION*/
+@media all and (min-width: 411px) {
+  article h2 {
+    margin-left: 28px;
+  }
+  article .restaurant {
+    height: 160px;
+    width: 350px;
+  }
+}
+
 @media all and (min-width: 768px) {
+  article h2 {
+    margin-left: 30px;
+  }
+  article .cartes {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "a b";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 50px;
+    margin: 50px;
+  }
+  article .restaurant {
+    height: 120px;
+    width: 330px;
+    border-radius: 15px 15px 0px 0px;
+  }
+}
+
+@media all and (min-width: 1000px) {
   .cartes {
     display: -ms-grid;
     display: grid;
@@ -307,12 +356,31 @@ footer .footer {
     grid-gap: 50px;
     margin: 50px;
   }
+  .cartes .restaurant {
+    height: 190px;
+    width: 460px;
+    border-radius: 15px 15px 0px 0px;
+  }
 }
 
-@media all and (min-width: 411px) {
-  .restaurant {
-    height: 135px;
-    width: 400px;
+@media all and (min-width: 1366px) {
+  article h2 {
+    margin-left: 60px;
+  }
+  .cartes {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "a b";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 50px;
+    margin: 50px;
+  }
+  .cartes .restaurant {
+    height: 380px;
+    width: 870px;
+    border-radius: 15px 15px 0px 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
