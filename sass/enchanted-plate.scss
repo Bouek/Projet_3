@@ -1,6 +1,27 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'shrikhand';
+    src: url('../fonts/shrikhand-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html
 {
     height: 100%;
+}
+
+.omf-style
+{
+    font-family: 'shrikhand';
 }
 
 body
@@ -8,6 +29,7 @@ body
     height: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'robotoregular';
 }
 
 /*HEADER*/
@@ -34,7 +56,7 @@ header
 {
     width: 100%;
     height: 300px;
-    background-image: url("../maquette/projet_3-ohmyfood_en/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 320px;
 }
@@ -53,6 +75,7 @@ header
 
     h2
     {
+        font-size: 20px;
         margin-left: 15px;
     }
     .coeur
@@ -66,6 +89,7 @@ header
 
     h3
     {
+        font-size: 15px;
         margin-left: 15px;
         margin-bottom: 20px;
         text-transform: uppercase;
@@ -170,7 +194,7 @@ header
     
     ul p 
     {
-        font-size: 13px;
+        font-size: 12px;
         margin: 0 0 5px 5px;
     }
     
@@ -183,6 +207,7 @@ header
     
     ul h4 
     {
+        font-size: 15px;
         margin: 0 0 5px 5px;
     }
     
@@ -215,10 +240,10 @@ header
         {
             position: relative;  
             color: #99E2D0;
-            font-size:12px;
-            width: 20px;
-            height: 20px;
-            text-align: center;
+            font-size: 12px;
+            left: 4px;
+            bottom: 2px;
+            
         }
     }
 }
@@ -266,6 +291,7 @@ footer
 
     h3
     {
+        font-size: 15px;
         padding-top: 25px;
     }
 

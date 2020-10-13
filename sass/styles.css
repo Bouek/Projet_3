@@ -14,6 +14,9 @@
 
 html {
   height: 100%;
+}
+
+.omf-style {
   font-family: 'shrikhand';
 }
 
@@ -21,6 +24,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: 'robotoregular';
 }
 
 /*HEADER*/
@@ -83,7 +87,7 @@ header {
 
 #steps .button-1 {
   display: block;
-  width: 180px;
+  width: 230px;
   height: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -176,6 +180,7 @@ article {
 }
 
 article h2 {
+  font-size: 20px;
   margin-left: 15px;
   margin-top: 50px;
   margin-bottom: 1px;
@@ -183,7 +188,7 @@ article h2 {
 }
 
 article .restaurant {
-  height: 135px;
+  height: 130px;
   width: 290px;
   border-radius: 15px 15px 0px 0px;
 }
@@ -195,7 +200,8 @@ article a {
 
 article .name {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  margin-top: 10px;
   margin-left: 10px;
   padding-top: -30px;
   padding-bottom: -20px;
@@ -208,14 +214,18 @@ article i {
   color: rgba(128, 128, 128, 0.911);
 }
 
+article .plein {
+  color: #9356DC;
+}
+
 article i:hover {
   background-color: #fadafd;
 }
 
 article .lieu {
-  margin-top: -10px;
+  margin-top: -15px;
   margin-left: 10px;
-  padding-bottom: 19px;
+  padding-bottom: 15px;
 }
 
 article #bloc-1 {
@@ -240,7 +250,7 @@ article #bloc-2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -15px;
+  margin-top: -17px;
 }
 
 article .zoom-menus {
@@ -271,6 +281,7 @@ footer {
 }
 
 footer h3 {
+  font-size: 15px;
   padding-top: 25px;
 }
 

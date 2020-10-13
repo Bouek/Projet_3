@@ -17,6 +17,10 @@
 html
 {
     height: 100%;
+}
+
+.omf-style
+{
     font-family: 'shrikhand';
 }
 
@@ -25,6 +29,7 @@ body
     height: 100%;
     padding: 0;
     margin: 0;
+    font-family: 'robotoregular';
 }
 
 /*HEADER*/
@@ -85,7 +90,7 @@ header
 .button-1
     {
         display: block;
-        width: 180px;
+        width: 230px;
         height: 50px;
         background: linear-gradient(#FF79DA, #9356DC);
         color: #fff;
@@ -186,6 +191,7 @@ article
 
     h2
     {
+        font-size: 20px;
         margin-left: 15px;
         margin-top: 50px;
         margin-bottom: 1px;
@@ -194,7 +200,7 @@ article
 
     .restaurant
     {
-        height: 135px;
+        height: 130px;
         width: 290px;
         border-radius: 15px 15px 0px 0px;
     }
@@ -208,7 +214,8 @@ article
     .name
     {
        font-weight: bold;
-       font-size: 20px;
+       font-size: 18px;
+       margin-top: 10px;
        margin-left: 10px; 
        padding-top: -30px;
        padding-bottom: -20px;  
@@ -223,6 +230,11 @@ article
         color: rgba(128, 128, 128, 0.911);
     }
 
+    .plein
+    {
+        color:#9356DC;
+    }
+
     i:hover
     {
         
@@ -232,9 +244,9 @@ article
 
     .lieu
     {
-        margin-top: -10px;
+        margin-top: -15px;
         margin-left: 10px;
-        padding-bottom: 19px;
+        padding-bottom: 15px;
     }
 
     #bloc-1
@@ -249,7 +261,8 @@ article
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -15px;
+        margin-top: -17px;
+        
     }
 
     .zoom-menus 
@@ -259,7 +272,6 @@ article
         margin-top: 20px;
         background-color: white;
     }
-
     .zoom-menus:hover
     {
         overflow: hidden;
@@ -281,6 +293,7 @@ footer
 
     h3
     {
+        font-size: 15px;
         padding-top: 25px;
     }
 

@@ -1,11 +1,30 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'shrikhand';
+  src: url("../fonts/shrikhand-regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   height: 100%;
+}
+
+.omf-style {
+  font-family: 'shrikhand';
 }
 
 body {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: 'robotoregular';
 }
 
 /*HEADER*/
@@ -33,7 +52,7 @@ header a {
 .image {
   width: 100%;
   height: 300px;
-  background-image: url("../maquette/projet_3-ohmyfood_en/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 320px;
 }
@@ -51,6 +70,7 @@ header a {
 }
 
 .content h2 {
+  font-size: 23px;
   margin-left: 15px;
 }
 
@@ -181,7 +201,7 @@ header a {
 }
 
 .content ul p {
-  font-size: 13px;
+  font-size: 12px;
   margin: 0 0 5px 5px;
 }
 
@@ -190,6 +210,7 @@ header a {
 }
 
 .content ul h4 {
+  font-size: 15px;
   margin: 0 0 5px 5px;
 }
 
