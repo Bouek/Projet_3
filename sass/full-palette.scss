@@ -89,6 +89,7 @@ header
 
     h3
     {
+        font-size: 15px;
         margin-left: 15px;
         margin-bottom: 20px;
         text-transform: uppercase;
@@ -143,7 +144,11 @@ header
         position: relative;
         margin: 10px;
         left: -40px;
-        
+    }
+
+    .dish-1
+    {
+        height: 85px;
     }
 
     li input 
@@ -240,9 +245,8 @@ header
             position: relative;  
             color: #99E2D0;
             font-size:12px;
-            width: 20px;
-            height: 20px;
-            text-align: center;
+            left: 4px;
+            bottom: 2px;
         }
     }
 }
@@ -290,6 +294,7 @@ footer
 
     h3
     {
+        font-size: 15px;
         padding-top: 25px;
     }
 

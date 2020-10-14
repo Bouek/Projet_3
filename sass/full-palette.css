@@ -83,6 +83,7 @@ header a {
 }
 
 .content h3 {
+  font-size: 15px;
   margin-left: 15px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -147,6 +148,10 @@ header a {
   position: relative;
   margin: 10px;
   left: -40px;
+}
+
+.content .dish-1 {
+  height: 85px;
 }
 
 .content li input {
@@ -249,9 +254,8 @@ header a {
   position: relative;
   color: #99E2D0;
   font-size: 12px;
-  width: 20px;
-  height: 20px;
-  text-align: center;
+  left: 4px;
+  bottom: 2px;
 }
 
 .btn-4 {
@@ -292,6 +296,7 @@ footer {
 }
 
 footer h3 {
+  font-size: 15px;
   padding-top: 25px;
 }
 
