@@ -108,11 +108,9 @@ header
 @keyframes slideDown
 {
     0% {
-        transform: translateX(-200px);
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
         opacity: 1;
     }
 
@@ -120,17 +118,17 @@ header
 
     .entrees
     {
-      animation: slideDown 1.5s;
+      animation: slideDown 2.5s;
     }
 
     .plate
     {
-      animation: slideDown 2s;
+      animation: slideDown 5s;
     }
 
     .desserts
     {
-      animation: slideDown 2.5s;
+      animation: slideDown 7.5s;
     }
 
     ul > li 
@@ -180,6 +178,20 @@ header
         transition: all 0.25s linear;
         transform: rotate(-360deg);
     }
+
+    input:checked ~ .li-content h4
+    {
+        
+        width: 70%;
+        
+    }
+
+    input:checked ~ .li-content p
+    {
+        
+        width: 70%;
+        
+    }
    
     .li-content 
     {
@@ -200,6 +212,10 @@ header
     {
         font-size: 12px;
         margin: 0 0 5px 5px;
+        text-overflow: ellipsis;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
     }
     
     ul h5 
@@ -213,6 +229,10 @@ header
     {
         font-size: 15px;
         margin: 0 0 5px 5px;
+        text-overflow: ellipsis;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
     }
     
     .right-checkbox 
