@@ -120,18 +120,18 @@ header a {
 }
 
 .content .entrees {
-  -webkit-animation: slideDown 2.5s;
-          animation: slideDown 2.5s;
+  -webkit-animation: slideDown 3s;
+          animation: slideDown 3s;
 }
 
 .content .plate {
-  -webkit-animation: slideDown 5s;
-          animation: slideDown 5s;
+  -webkit-animation: slideDown 6s;
+          animation: slideDown 6s;
 }
 
 .content .desserts {
-  -webkit-animation: slideDown 7.5s;
-          animation: slideDown 7.5s;
+  -webkit-animation: slideDown 9s;
+          animation: slideDown 9s;
 }
 
 .content ul > li {

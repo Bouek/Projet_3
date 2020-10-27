@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'robotoregular';
   src: url("../fonts/roboto-regular-webfont.woff");
@@ -25,6 +26,53 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'robotoregular';
+}
+
+.chargement {
+  /*Créatiion du loader*/
+  opacity: 0;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #2980b9;
+  border-bottom: 6px solid #e74c3c;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  -webkit-animation: spin 3s ease-in-out;
+  animation: spin 2s ease-in-out;
+  /*Placement du loader au milieu de la page*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*Animation du loader*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
 }
 
 /*HEADER*/
@@ -195,6 +243,7 @@ article h2 {
 }
 
 article .restaurant1 {
+  position: relative;
   height: 130px;
   width: 290px;
   border-radius: 15px 15px 0px 0px;
@@ -202,12 +251,39 @@ article .restaurant1 {
   background-size: cover;
 }
 
+article .restaurant1 .new {
+  position: absolute;
+  right: 15px;
+  top: -1px;
+  border-radius: 2px;
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #3a3939;
+  background-color: #99E2D0;
+}
+
 article .restaurant2 {
+  position: relative;
   height: 130px;
   width: 290px;
   border-radius: 15px 15px 0px 0px;
   background-image: url(../images/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
+}
+
+article .restaurant2 .new {
+  position: absolute;
+  right: 15px;
+  top: -1px;
+  border-radius: 2px;
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #3a3939;
+  background-color: #99E2D0;
 }
 
 article .restaurant3 {
@@ -336,48 +412,106 @@ footer .footer {
 
 /*RESPONSIVE*/
 @media all and (min-width: 360px) {
-  #possibilities {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  #possibilities h2 {
+    font-size: 23px;
+    margin-left: 40px;
   }
-  h2 {
-    margin-right: 200px;
+  #possibilities ul {
+    margin-left: 22px;
   }
   article h2 {
-    margin-left: 23px;
+    margin-left: 20px;
   }
-  article .restaurant {
+  article .restaurant1 {
     height: 140px;
-    width: 310px;
+    width: 330px;
+  }
+  article .restaurant2 {
+    height: 140px;
+    width: 330px;
+  }
+  article .restaurant3 {
+    height: 140px;
+    width: 330px;
+  }
+  article .restaurant4 {
+    height: 140px;
+    width: 330px;
   }
 }
 
 /*MENUS DISPOSITION*/
 @media all and (min-width: 411px) {
+  #possibilities h2 {
+    font-size: 25px;
+    margin-left: 65px;
+  }
+  #possibilities ul {
+    margin-left: 50px;
+  }
   article h2 {
+    font-size: 23px;
+    margin-left: 22px;
+  }
+  article .restaurant1 {
+    height: 160px;
+    width: 380px;
+  }
+  article .restaurant2 {
+    height: 160px;
+    width: 380px;
+  }
+  article .restaurant3 {
+    height: 160px;
+    width: 380px;
+  }
+  article .restaurant4 {
+    height: 160px;
+    width: 380px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  #possibilities h2 {
+    font-size: 25px;
+    margin-left: 145px;
+  }
+  #possibilities ul {
+    margin-left: 135px;
+  }
+  article h2 {
+    font-size: 22px;
     margin-left: 28px;
   }
-  article .restaurant {
+  article .restaurant1 {
     height: 160px;
-    width: 350px;
+    width: 480px;
+  }
+  article .restaurant2 {
+    height: 160px;
+    width: 480px;
+  }
+  article .restaurant3 {
+    height: 160px;
+    width: 480px;
+  }
+  article .restaurant4 {
+    height: 160px;
+    width: 480px;
   }
 }
 
 @media all and (min-width: 768px) {
+  #possibilities h2 {
+    font-size: 30px;
+    margin-left: 250px;
+  }
+  #possibilities ul {
+    margin-left: 240px;
+  }
   article h2 {
-    margin-left: 30px;
+    font-size: 30px;
+    margin-left: 25px;
   }
   article .cartes {
     display: -ms-grid;
@@ -389,15 +523,41 @@ footer .footer {
     grid-gap: 50px;
     margin: 50px;
   }
-  article .restaurant {
+  article .restaurant1 {
     height: 120px;
-    width: 330px;
+    width: 340px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .restaurant2 {
+    height: 120px;
+    width: 340px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .restaurant3 {
+    height: 120px;
+    width: 340px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .restaurant4 {
+    height: 120px;
+    width: 340px;
     border-radius: 15px 15px 0px 0px;
   }
 }
 
-@media all and (min-width: 1000px) {
-  .cartes {
+@media all and (min-width: 950px) {
+  #possibilities h2 {
+    font-size: 30px;
+    margin-left: 250px;
+  }
+  #possibilities ul {
+    margin-left: 240px;
+  }
+  article h2 {
+    font-size: 30px;
+    margin-left: 25px;
+  }
+  article .cartes {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "a b";
@@ -407,18 +567,90 @@ footer .footer {
     grid-gap: 50px;
     margin: 50px;
   }
-  .cartes .restaurant {
-    height: 190px;
+  article .restaurant1 {
+    height: 200px;
+    width: 430px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .restaurant2 {
+    height: 200px;
+    width: 430px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .restaurant3 {
+    height: 200px;
+    width: 430px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .restaurant4 {
+    height: 200px;
+    width: 430px;
+    border-radius: 15px 15px 0px 0px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  #possibilities h2 {
+    font-size: 30px;
+    margin-left: 380px;
+  }
+  #possibilities ul {
+    margin-left: 370px;
+  }
+  article h2 {
+    font-size: 35px;
+  }
+  article .cartes {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "a b";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 50px;
+    margin: 50px;
+  }
+  article .cartes .restaurant1 {
+    height: 230px;
+    width: 460px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .cartes .restaurant2 {
+    height: 230px;
+    width: 460px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .cartes .restaurant3 {
+    height: 230px;
+    width: 460px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .cartes .restaurant4 {
+    height: 230px;
     width: 460px;
     border-radius: 15px 15px 0px 0px;
   }
 }
 
 @media all and (min-width: 1366px) {
-  article h2 {
-    margin-left: 60px;
+  header {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .cartes {
+  .localisation {
+    width: 150px;
+    font-size: 15px;
+    left: 0;
+    -webkit-box-shadow: 2px 2px 2px black;
+            box-shadow: 2px 2px 2px black;
+  }
+  article h2 {
+    font-size: 25px;
+    margin-left: 25px;
+  }
+  article .cartes {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "a b";
@@ -428,9 +660,24 @@ footer .footer {
     grid-gap: 50px;
     margin: 50px;
   }
-  .cartes .restaurant {
-    height: 380px;
-    width: 870px;
+  article .cartes .restaurant1 {
+    height: 420px;
+    width: 840px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .cartes .restaurant2 {
+    height: 420px;
+    width: 840px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .cartes .restaurant3 {
+    height: 420px;
+    width: 840px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  article .cartes .restaurant4 {
+    height: 420px;
+    width: 840px;
     border-radius: 15px 15px 0px 0px;
   }
 }
