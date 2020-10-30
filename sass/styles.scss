@@ -105,7 +105,6 @@ header
         margin-bottom: -20px;
         background-color: rgb(224, 223, 223);
         box-shadow: 0px 2px 2px rgb(160, 159, 159) inset;
-        
     }
 
     .map
@@ -188,6 +187,22 @@ header
                 top: 23px;
                 left: 30px;
                 font-size: 14px;
+                @media all and (min-width: 411px)
+                {
+                    top: 26px;
+                    font-size: 20px;
+                }
+                @media all and (min-width: 768px)
+                {
+                    top: 26px;
+                    font-size: 24px;
+                }
+                @media all and (min-width: 1000px)
+                {
+                    font-size: 35px;
+                    top: 30px;
+                    left: 50px;
+                }
             }
 
             .notif-left
@@ -204,6 +219,31 @@ header
                 position: absolute;
                 top: 22px;
                 left: -10px;
+                @media all and (min-width: 411px)
+                {
+                    top: 24px;
+                    font-size: 13px;
+                    width: 16px;
+                    height: 17px;
+                    padding-left: 7px;
+                    padding-bottom: 6px;
+                    padding-top: 4px;
+                }
+                @media all and (min-width: 768px)
+                {
+                    top: 26px;
+                }
+                @media all and (min-width: 1000px)
+                {
+                    top: 28px;
+                    font-size: 25px;
+                    width: 30px;
+                    height: 30px;
+                    left: -20px;
+                    padding-left: 15px;
+                    padding-bottom: 9px;
+                    padding-top: 8px;
+                }
             }
 
             .button-2
@@ -218,7 +258,28 @@ header
                 font-size: 13px;
                 text-align: center;
                 margin-top: 25px;
-                
+                @media all and (min-width: 360px) 
+                {
+                    width: 310px;
+                }
+                @media all and (min-width: 411px) 
+                {
+                    width: 350px;
+                    height: 70px;
+                    font-size: 16px;
+                }
+                @media all and (min-width: 768px) 
+                {
+                    width: 450px;
+                    height: 75px;
+                    font-size: 22px;
+                }
+                @media all and (min-width: 1000px) 
+                {
+                    width: 610px;
+                    height: 100px;
+                    font-size: 30px;
+                }
             }
 
             .button-2:hover
@@ -324,9 +385,6 @@ article
        font-size: 18px;
        margin-top: 10px;
        margin-left: 10px; 
-       padding-top: -30px;
-       padding-bottom: -20px;  
-
     }
 
     .name:hover
@@ -430,13 +488,13 @@ footer
     {
         h2
         {
-            font-size: 23px;
-            margin-left: 40px;
+            font-size: 20px;
+            margin-left: 25px;
         }
 
         ul
         {
-            margin-left: 22px;
+            margin-left: 10px;
         }
     }
 
@@ -477,17 +535,47 @@ footer
 
 @media all and (min-width: 411px) 
 { 
+    #steps
+    {
+        p
+        {
+            font-size: 15px;
+        }
+
+        .reserve
+        {
+            font-size: 22px;
+        }
+
+        .decouverte
+        {
+            font-size: 18px;
+        }
+
+        .suite
+        {
+            font-size: 18px;
+        }
+
+        .button-1
+        {
+            width: 230px;
+            height: 35px;
+            font-size: 15px;
+            line-height: 50px;
+        }
+    }
     #possibilities
     {
         h2
         {
-            font-size: 25px;
-            margin-left: 65px;
+            font-size: 22px;
+            margin-left: 35px;
         }
 
         ul
         {
-            margin-left: 50px;
+            margin-left: 15px;
         }
     }
 
@@ -495,7 +583,7 @@ footer
     {
         h2
         {
-            font-size: 23px;
+            font-size: 22px;
             margin-left: 22px;
         }
 
@@ -578,17 +666,54 @@ footer
 
 @media all and (min-width: 768px) 
 {   
+    header
+    {
+        font-size: 19px;
+        margin-bottom: 5px;
+    }
+
+    #steps
+    {
+        p 
+        {
+            font-size: 22px;
+        }
+
+        .reserve
+        {
+            font-size: 32px;
+        }
+
+        .decouverte
+        {
+            font-size: 22px;
+        }
+
+        .suite
+        {
+            font-size: 22px;
+        }
+
+        .button-1
+        {
+            width: 290px;
+            height: 45px;
+            font-size: 20px;
+            line-height: 60px;
+        }
+    }
+
     #possibilities
     {
         h2
         {
-            font-size: 30px;
-            margin-left: 250px;
+            font-size: 28px;
+            margin-left: 190px;
         }
 
         ul
         {
-            margin-left: 240px;
+            margin-left: 170px;
         }
     }
 
@@ -596,7 +721,7 @@ footer
     {
         h2
         {
-            font-size: 30px;
+            font-size: 28px;
             margin-left: 25px;
         }
     
@@ -641,6 +766,43 @@ footer
 
 @media all and (min-width: 950px) 
 {   
+    header
+    {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    #steps
+    {
+        p 
+        {
+            font-size: 28px;
+        }
+
+        .reserve
+        {
+            font-size: 45px;
+        }
+
+        .decouverte
+        {
+            font-size: 32px;
+        }
+
+        .suite
+        {
+            font-size: 32px;
+        }
+
+        .button-1
+        {
+            width: 360px;
+            height: 65px;
+            font-size: 26px;
+            line-height: 80px;
+        }
+    }
+
     #possibilities
     {
         h2
@@ -709,12 +871,12 @@ footer
         h2
         {
             font-size: 30px;
-            margin-left: 380px;
+            margin-left: 330px;
         }
 
         ul
         {
-            margin-left: 370px;
+            margin-left: 320px;
         }
     }
 

@@ -177,11 +177,11 @@ header a {
 }
 
 .content input:checked ~ .li-content h4 {
-  width: 70%;
+  width: 80%;
 }
 
 .content input:checked ~ .li-content p {
-  width: 70%;
+  width: 80%;
 }
 
 .content .li-content {

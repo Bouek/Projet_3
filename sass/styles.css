@@ -194,6 +194,28 @@ header {
   font-size: 14px;
 }
 
+@media all and (min-width: 411px) {
+  #possibilities ul li .icone-btn {
+    top: 26px;
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #possibilities ul li .icone-btn {
+    top: 26px;
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  #possibilities ul li .icone-btn {
+    font-size: 35px;
+    top: 30px;
+    left: 50px;
+  }
+}
+
 #possibilities ul li .notif-left {
   border-radius: 50%;
   width: 15px;
@@ -209,6 +231,37 @@ header {
   left: -10px;
 }
 
+@media all and (min-width: 411px) {
+  #possibilities ul li .notif-left {
+    top: 24px;
+    font-size: 13px;
+    width: 16px;
+    height: 17px;
+    padding-left: 7px;
+    padding-bottom: 6px;
+    padding-top: 4px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #possibilities ul li .notif-left {
+    top: 26px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  #possibilities ul li .notif-left {
+    top: 28px;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    left: -20px;
+    padding-left: 15px;
+    padding-bottom: 9px;
+    padding-top: 8px;
+  }
+}
+
 #possibilities ul li .button-2 {
   background-color: #eeecec;
   border: none;
@@ -221,6 +274,36 @@ header {
   font-size: 13px;
   text-align: center;
   margin-top: 25px;
+}
+
+@media all and (min-width: 360px) {
+  #possibilities ul li .button-2 {
+    width: 310px;
+  }
+}
+
+@media all and (min-width: 411px) {
+  #possibilities ul li .button-2 {
+    width: 350px;
+    height: 70px;
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #possibilities ul li .button-2 {
+    width: 450px;
+    height: 75px;
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  #possibilities ul li .button-2 {
+    width: 610px;
+    height: 100px;
+    font-size: 30px;
+  }
 }
 
 #possibilities ul li .button-2:hover {
@@ -312,8 +395,6 @@ article .name {
   font-size: 18px;
   margin-top: 10px;
   margin-left: 10px;
-  padding-top: -30px;
-  padding-bottom: -20px;
 }
 
 article .name:hover
@@ -413,11 +494,11 @@ footer .footer {
 /*RESPONSIVE*/
 @media all and (min-width: 360px) {
   #possibilities h2 {
-    font-size: 23px;
-    margin-left: 40px;
+    font-size: 20px;
+    margin-left: 25px;
   }
   #possibilities ul {
-    margin-left: 22px;
+    margin-left: 10px;
   }
   article h2 {
     margin-left: 20px;
@@ -442,15 +523,33 @@ footer .footer {
 
 /*MENUS DISPOSITION*/
 @media all and (min-width: 411px) {
+  #steps p {
+    font-size: 15px;
+  }
+  #steps .reserve {
+    font-size: 22px;
+  }
+  #steps .decouverte {
+    font-size: 18px;
+  }
+  #steps .suite {
+    font-size: 18px;
+  }
+  #steps .button-1 {
+    width: 230px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 50px;
+  }
   #possibilities h2 {
-    font-size: 25px;
-    margin-left: 65px;
+    font-size: 22px;
+    margin-left: 35px;
   }
   #possibilities ul {
-    margin-left: 50px;
+    margin-left: 15px;
   }
   article h2 {
-    font-size: 23px;
+    font-size: 22px;
     margin-left: 22px;
   }
   article .restaurant1 {
@@ -502,15 +601,37 @@ footer .footer {
 }
 
 @media all and (min-width: 768px) {
+  header {
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+  #steps p {
+    font-size: 22px;
+  }
+  #steps .reserve {
+    font-size: 32px;
+  }
+  #steps .decouverte {
+    font-size: 22px;
+  }
+  #steps .suite {
+    font-size: 22px;
+  }
+  #steps .button-1 {
+    width: 290px;
+    height: 45px;
+    font-size: 20px;
+    line-height: 60px;
+  }
   #possibilities h2 {
-    font-size: 30px;
-    margin-left: 250px;
+    font-size: 28px;
+    margin-left: 190px;
   }
   #possibilities ul {
-    margin-left: 240px;
+    margin-left: 170px;
   }
   article h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-left: 25px;
   }
   article .cartes {
@@ -546,6 +667,28 @@ footer .footer {
 }
 
 @media all and (min-width: 950px) {
+  header {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  #steps p {
+    font-size: 28px;
+  }
+  #steps .reserve {
+    font-size: 45px;
+  }
+  #steps .decouverte {
+    font-size: 32px;
+  }
+  #steps .suite {
+    font-size: 32px;
+  }
+  #steps .button-1 {
+    width: 360px;
+    height: 65px;
+    font-size: 26px;
+    line-height: 80px;
+  }
   #possibilities h2 {
     font-size: 30px;
     margin-left: 250px;
@@ -592,10 +735,10 @@ footer .footer {
 @media all and (min-width: 1000px) {
   #possibilities h2 {
     font-size: 30px;
-    margin-left: 380px;
+    margin-left: 330px;
   }
   #possibilities ul {
-    margin-left: 370px;
+    margin-left: 320px;
   }
   article h2 {
     font-size: 35px;
