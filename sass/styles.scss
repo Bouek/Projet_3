@@ -200,7 +200,7 @@ header
                 @media all and (min-width: 1000px)
                 {
                     font-size: 35px;
-                    top: 30px;
+                    top: 32px;
                     left: 50px;
                 }
             }
@@ -531,6 +531,17 @@ footer
     }
 }
 
+@media all and (min-width: 375px) 
+{
+    #possibilities
+    {
+        ul
+        {
+            margin-left: 22px;
+        }
+    }
+}
+
 /*MENUS DISPOSITION*/
 
 @media all and (min-width: 411px) 
@@ -762,6 +773,31 @@ footer
             border-radius: 15px 15px 0px 0px;
         }
     }
+
+    footer
+    {
+        h3
+        {
+            font-size: 18px;
+        }
+        p
+        {
+            font-size: 15px;
+        }
+
+        .bas
+        {
+            margin-top: -20px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 40px;
+        }
+        
+        .footer
+        {
+            font-size: 12px;
+        }
+    }
 }
 
 @media all and (min-width: 950px) 
@@ -862,6 +898,30 @@ footer
             border-radius: 15px 15px 0px 0px;
         }
     }
+
+    footer
+    {
+        h3
+        {
+            font-size: 20px;
+        }
+        p
+        {
+            font-size: 18px;
+        }
+
+        .bas
+        {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 45px;
+        }
+        
+        .footer
+        {
+            font-size: 13px;
+        }
+    }
 }
 
 @media all and (min-width: 1000px) 
@@ -870,13 +930,13 @@ footer
     {
         h2
         {
-            font-size: 30px;
-            margin-left: 330px;
+            font-size: 35px;
+            margin-left: 230px;
         }
 
         ul
         {
-            margin-left: 320px;
+            margin-left: 220px;
         }
     }
 
@@ -924,12 +984,11 @@ footer
         }
     }
 }
-
 @media all and (min-width: 1366px) 
 {   
     header
     {
-        font-size: 20px;
+        font-size: 35px;
         display: flex;
        
     }
@@ -940,6 +999,18 @@ footer
         font-size: 15px;
         left: 0;
         box-shadow: 2px 2px 2px black;
+    }
+
+    #possibilities
+    {
+        h2
+        {
+            margin-left: 660px;
+        }
+        ul
+        {
+            margin-left: 650px;
+        }
     }
 
     article

@@ -211,7 +211,7 @@ header {
 @media all and (min-width: 1000px) {
   #possibilities ul li .icone-btn {
     font-size: 35px;
-    top: 30px;
+    top: 32px;
     left: 50px;
   }
 }
@@ -521,6 +521,12 @@ footer .footer {
   }
 }
 
+@media all and (min-width: 375px) {
+  #possibilities ul {
+    margin-left: 22px;
+  }
+}
+
 /*MENUS DISPOSITION*/
 @media all and (min-width: 411px) {
   #steps p {
@@ -664,6 +670,25 @@ footer .footer {
     width: 340px;
     border-radius: 15px 15px 0px 0px;
   }
+  footer h3 {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer .bas {
+    margin-top: -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 40px;
+  }
+  footer .footer {
+    font-size: 12px;
+  }
 }
 
 @media all and (min-width: 950px) {
@@ -730,15 +755,33 @@ footer .footer {
     width: 430px;
     border-radius: 15px 15px 0px 0px;
   }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  footer .bas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 45px;
+  }
+  footer .footer {
+    font-size: 13px;
+  }
 }
 
 @media all and (min-width: 1000px) {
   #possibilities h2 {
-    font-size: 30px;
-    margin-left: 330px;
+    font-size: 35px;
+    margin-left: 230px;
   }
   #possibilities ul {
-    margin-left: 320px;
+    margin-left: 220px;
   }
   article h2 {
     font-size: 35px;
@@ -777,7 +820,7 @@ footer .footer {
 
 @media all and (min-width: 1366px) {
   header {
-    font-size: 20px;
+    font-size: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -788,6 +831,12 @@ footer .footer {
     left: 0;
     -webkit-box-shadow: 2px 2px 2px black;
             box-shadow: 2px 2px 2px black;
+  }
+  #possibilities h2 {
+    margin-left: 660px;
+  }
+  #possibilities ul {
+    margin-left: 650px;
   }
   article h2 {
     font-size: 25px;
